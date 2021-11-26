@@ -26,14 +26,12 @@ function Row({ title, fetchUrl, isPoster }) {
                     <div key={movie.id}>
                         <Link to={`/video/${movie.id}`}>
                             {isPoster ? (
-
                                 <img src={`${baseUrl}${movie.poster_path}`} className="row__image" alt={movie?.name || movie?.title || movie?.original_title} />)
                                 : (
                                     <img src={`${baseUrl}${movie.backdrop_path}`} className="row__image" alt={movie?.name || movie?.title || movie?.original_title} />)}
                         </Link>
                     </div>
                 ))}
-
             </div>
         </div>
     )

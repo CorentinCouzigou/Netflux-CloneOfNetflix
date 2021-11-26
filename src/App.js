@@ -21,7 +21,6 @@ function App() {
             <Row title="Comédies" fetchUrl={requests.fetchComedyMovies} />
             <Row title="Films d'horreurs" fetchUrl={requests.fetcHorrorMovies} />
             <Row title="Documentaires" fetchUrl={requests.fetchDocumentaries} />
-            <div className="test"></div>
             <Footer />
           </Route>
           <Route path="/video/:id" component={Video} />
