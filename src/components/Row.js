@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import './Row.scss';
 
 function Row({ title, fetchUrl, isPoster }) {
-    const baseUrl = "https://image.tmdb.org/t/p/original/";
+    const baseUrl = "https://image.tmdb.org/t/p/original";
     const [movies, setMovies] = useState([]);
+
 
     useEffect(() => {
         async function fetchData() {
@@ -16,7 +17,6 @@ function Row({ title, fetchUrl, isPoster }) {
         }
         fetchData();
     }, [fetchUrl])
-
 
     return (
         <div className="row">

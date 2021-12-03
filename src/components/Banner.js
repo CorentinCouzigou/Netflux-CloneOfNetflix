@@ -19,7 +19,6 @@ function Banner() {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchTrending);
-            console.log("result", request.data.results);
             setMovie(
                 request.data.results[
                 Math.floor(Math.random() * request.data.results.length - 1)
@@ -30,7 +29,6 @@ function Banner() {
     }, [])
 
     function truncateText(string, n) {
-        console.log("truncateText", string)
         return string ? string.substr(0, n - 1) + "..." : "No description";
     }
     const bannerStyle = {
@@ -38,8 +36,6 @@ function Banner() {
         backgroundSize: "cover",
         backgroundPosition: "center center",
     }
-    console.log(movie);
-    console.log(popup);
 
     return (
         <header className="banner" style={bannerStyle}>
