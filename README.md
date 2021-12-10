@@ -1,5 +1,5 @@
 # Netflux - clone of Netflix
-[Lien vers le site](https://wizardly-pike-5eaae4.netlify.app/)
+[Lien vers le site](https://netflux-corentin.netlify.app/)
 
 React/Sass/MatérialUi/Axios/React-router-dom
 ![alt text](netfluxhome.png "image netflux")
