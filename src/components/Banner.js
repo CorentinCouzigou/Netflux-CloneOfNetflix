@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 
 function Banner() {
-    const [movie, setMovie] = useState([]);
+    const [movie, setMovie] = useState({});
     const [popup, setPopup] = useState(false);
 
     function handleClickPopup() {
