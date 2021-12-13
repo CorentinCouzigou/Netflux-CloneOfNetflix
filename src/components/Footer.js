@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import tmdbLogo from '../assets/tmdb-logo.svg';
 
 function footer() {
     return (
@@ -40,7 +41,8 @@ function footer() {
                     </li>
                 </ul>
                 <div className="footer_copy">
-                    Netflix Clone - tous droits réservés
+                    <span>Netflix Clone - Netflix tous droits réservés et source TMDB</span><br />
+                    <span ><a href="https://www.themoviedb.org/"><img className="footer__span" src={tmdbLogo} alt="logo tmdb" /></a></span>
                 </div>
             </div>
         </footer>
