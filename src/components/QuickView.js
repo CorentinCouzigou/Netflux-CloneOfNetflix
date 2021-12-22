@@ -7,7 +7,8 @@ function QuickView({ bannerStyle, movie, handleClickPopup, popupStatut }) {
     console.log("movie", movie)
     return (
         <div className={`quickView ${popupStatut && "open"}`}>
-            <div className="quickView__banner" style={bannerStyle}>
+            <div className="quickView__banner"  >
+                <img className="quickView__banner__image" src={bannerStyle} alt="presentation quick vue" />
                 <div className="quickView__content">
                     <h3 className="quickView__title">
                         {movie?.title || movie?.name || movie?.original_title}
