@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, } from 'react';
 import Proptypes from 'prop-types';
-import Loading from '../components/Loader.js';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import './Row.scss';
@@ -19,14 +18,6 @@ function Row({ title, fetchUrl, isPoster }) {
         fetchData();
     }, [fetchUrl])
 
-    // const [loading, setLoading] = useState(true);
-    // const counter = useRef(0);
-    // const imageLoaded = () => {
-    //     counter.current += 1;
-    //     if (counter.current > 0) {
-    //         setLoading(false);
-    //     }
-    // }
     return (
         <>
 
@@ -39,7 +30,7 @@ function Row({ title, fetchUrl, isPoster }) {
                                 {isPoster ? (
                                     <img src={`${baseUrl}${movie.poster_path}`} className="row__image" alt={movie?.name || movie?.title || movie?.original_title} />)
                                     : (
-                                        <img  src={`${baseUrl}${movie.backdrop_path}`} className="row__image" alt={movie?.name || movie?.title || movie?.original_title} />)}
+                                        <img src={`${baseUrl}${movie.backdrop_path}`} className="row__image" alt={movie?.name || movie?.title || movie?.original_title} />)}
                             </Link>
                         </div>
                     ))}
