@@ -4,7 +4,6 @@ import Proptypes from 'prop-types';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 function QuickView({ bannerStyle, movie, handleClickPopup, popupStatut }) {
-    console.log("movie", movie)
     return (
         <div className={`quickView ${popupStatut && "open"}`}>
             <div className="quickView__banner"  >

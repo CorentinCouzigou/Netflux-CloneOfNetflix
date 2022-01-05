@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import './Video.scss';
 import axios from 'axios';
 
-console.log(process.env)
-console.log(process.env.REACT_APP_TMDBKEY)
 
 function Video() {
     let { id } = useParams.apply();
@@ -13,7 +11,7 @@ function Video() {
         async function fetchData() {
             const response = await axios.get(`http://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_TMDBKEY}&append_to_response=videos`)
             setYoutubeKey(response.data.videos.results[0].key);
-            console.log("resultmovie", response.data.videos.results[0].key);
+            // console.log("resultmovie", response.data.videos.results[0].key);
         }
         fetchData();
     })
