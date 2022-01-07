@@ -14,13 +14,15 @@ function QuickView({ bannerStyle, movie, handleClickPopup, popupStatut }) {
                     </h3>
                     <p>{movie?.overview}</p>
                 </div>
-                <button className="quickView__close" onClick={handleClickPopup}><CancelIcon /></button>
+                <button className="quickView__close" type="button" onClick={() => handleClickPopup()}>
+                    <CancelIcon className="quickView__close__SVG" onClick={() => handleClickPopup()} />
+                </button>
             </div>
         </div>
     )
 }
 QuickView.propTypes = {
-    bannerStyle: Proptypes.object.isRequired,
+    bannerStyle: Proptypes.string.isRequired,
     movie: Proptypes.object.isRequired,
     handleClickPopup: Proptypes.func.isRequired,
     popupStatut: Proptypes.bool.isRequired,

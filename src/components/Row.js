@@ -25,7 +25,6 @@ function Row({ title, fetchUrl, isPoster }) {
         // carrousel.current.scrollWidth - carrousel.current.clientWidth)=== taille totale de la barre de scroll bar
         if (carrousel.current.scrollLeft <= +(carrousel.current.scrollWidth - carrousel.current.clientWidth)) {
             setHandleArrowRight("block");
-            console.log("carrousel", carrousel.current.scrollLeft);
         }
         // carrousel.current.scrollLEft ===  mouvement de la scroll bar
         if (carrousel.current.scrollLeft <= 0) {
@@ -34,7 +33,6 @@ function Row({ title, fetchUrl, isPoster }) {
     }
 
     function moveRightCarrousel() {
-        console.log(carrousel.current.clientWidth)
         let sizeRight = +carrousel.current.offsetWidth + ((+carrousel.current.offsetWidth / 100) * 3);
         carrousel.current.scrollLeft += sizeRight;
         if (carrousel.current.scrollLeft === +(carrousel.current.scrollWidth - carrousel.current.clientWidth)) {

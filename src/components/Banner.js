@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./banner.scss";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
@@ -14,6 +14,8 @@ function Banner({ imageLoaded }) {
 
     function handleClickPopup() {
         popup ? setPopup(false) : setPopup(true);
+      
+
     }
 
     useEffect(() => {
@@ -30,6 +32,7 @@ function Banner({ imageLoaded }) {
 
     function truncateText(string, n) {
         return string ? string.substr(0, n - 1) + "..." : "No description";
+
     }
     const bannerStyle = `https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`;
 

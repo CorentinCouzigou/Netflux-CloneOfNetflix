@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.2370bfcd.chunk.css",
-    "main.js": "/static/js/main.face02cd.chunk.js",
-    "main.js.map": "/static/js/main.face02cd.chunk.js.map",
+    "main.css": "/static/css/main.c5d9a398.chunk.css",
+    "main.js": "/static/js/main.d92a067e.chunk.js",
+    "main.js.map": "/static/js/main.d92a067e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dbb0e8c6.js",
     "runtime-main.js.map": "/static/js/runtime-main.dbb0e8c6.js.map",
     "static/js/2.23bb0736.chunk.js": "/static/js/2.23bb0736.chunk.js",
     "static/js/2.23bb0736.chunk.js.map": "/static/js/2.23bb0736.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2370bfcd.chunk.css.map": "/static/css/main.2370bfcd.chunk.css.map",
+    "static/css/main.c5d9a398.chunk.css.map": "/static/css/main.c5d9a398.chunk.css.map",
     "static/js/2.23bb0736.chunk.js.LICENSE.txt": "/static/js/2.23bb0736.chunk.js.LICENSE.txt",
     "static/media/tmdb-logo.da3f379f.svg": "/static/media/tmdb-logo.da3f379f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dbb0e8c6.js",
     "static/js/2.23bb0736.chunk.js",
-    "static/css/main.2370bfcd.chunk.css",
-    "static/js/main.face02cd.chunk.js"
+    "static/css/main.c5d9a398.chunk.css",
+    "static/js/main.d92a067e.chunk.js"
   ]
 }
